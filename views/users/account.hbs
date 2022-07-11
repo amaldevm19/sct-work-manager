@@ -1,0 +1,49 @@
+<div class="row">
+  <div class="col">
+    <img src="/images/uploads/users/{{userInfo.avatar}}" alt="user-image" />
+  </div>
+  <div class="col">
+    <h1>Welcome {{userInfo.email}}</h1>
+  </div>
+</div>
+
+<div class="row">
+  <form>
+    <div class="mb-3">
+      <label for="user_name" class="form-label">User Name</label>
+      <input
+        class="form-control"
+        value="{{userInfo.username}}"
+        readonly
+        id="user_name"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email address</label>
+      <input
+        class="form-control"
+        value="{{userInfo.email}}"
+        readonly
+        id="email"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="phone_number" class="form-label">Phone Number</label>
+      <input
+        class="form-control"
+        value="{{userInfo.phone}} 0554062535"
+        readonly
+        id="phone_number"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="designation" class="form-label">Designation</label>
+      <input
+        class="form-control"
+        value="{{userInfo.designation}}"
+        readonly
+        id="designation"
+      />
+    </div>
+  </form>
+</div>
